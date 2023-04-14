@@ -146,7 +146,7 @@ namespace Hootel_Management_System
             this.guna2Panel1.Controls.Add(this.usernamee);
             this.guna2Panel1.Controls.Add(this.checkBox1);
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Location = new System.Drawing.Point(160, -37);
+            this.guna2Panel1.Location = new System.Drawing.Point(160, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(454, 524);
             this.guna2Panel1.TabIndex = 11;
@@ -200,13 +200,14 @@ namespace Hootel_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 496);
+            this.ClientSize = new System.Drawing.Size(800, 526);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

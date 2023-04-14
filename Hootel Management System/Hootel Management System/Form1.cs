@@ -43,7 +43,9 @@ namespace Hootel_Management_System
             {
                 if (table.Rows.Count > 0)
                 {
-                    MessageBox.Show("Welcome");
+                    MainForm frm = new MainForm();
+                    frm.Show();
+                    this.Hide();
                 }
                 else
                 {
