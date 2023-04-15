@@ -9,7 +9,7 @@ namespace Hootel_Management_System
 {
     class dbconnect
     {
-        private MySqlConnection con = new MySqlConnection("server=localhost;database=dbhotel;uid=root;pwd=19751975;");
+        private MySqlConnection con = new MySqlConnection("server=localhost;database=dbhotel;uid=root;pwd=19751975;characterset=utf8mb4;");
 
         public MySqlConnection GetConnection()
         {

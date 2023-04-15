@@ -16,17 +16,26 @@ namespace Hootel_Management_System
         {
             InitializeComponent();
         }
+        public void Loadform(object Form)
+        {
+            if (this.mainpanel.Controls.Count > 0)
+                this.mainpanel.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
 
+        }
         private void button_dashboard_Click(object sender, EventArgs e)
         {
-            panel_slide.Height = button_dashboard.Height;
-            panel_slide.Top = button_dashboard.Top;
+            
         }
 
         private void button_guest_Click(object sender, EventArgs e)
         {
-            panel_slide.Height = button_guest.Height;
-            panel_slide.Top = button_guest.Top;
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,6 +47,45 @@ namespace Hootel_Management_System
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel_slide_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button_dashboard_Click_1(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_dashboard.Height;
+            panel_slide.Top = button_dashboard.Top;
+        }
+
+        private void button_guest_Click_1(object sender, EventArgs e)
+        {
+            panel_slide.Height = button_guest.Height;
+            panel_slide.Top = button_guest.Top;
+        }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+            panel_slide.Height = button3.Height;
+            panel_slide.Top = button3.Top;
+            Loadform(new GuestForm());
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            datelable.Text = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -66,5 +66,10 @@ namespace Hootel_Management_System
         {
             Application.Exit();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
