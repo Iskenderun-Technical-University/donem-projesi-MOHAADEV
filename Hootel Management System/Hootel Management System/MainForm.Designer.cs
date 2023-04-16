@@ -33,13 +33,13 @@ namespace Hootel_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.datelable = new System.Windows.Forms.Label();
             this.panel_slide = new System.Windows.Forms.Panel();
             this.button3 = new Guna.UI2.WinForms.Guna2Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_guest = new Guna.UI2.WinForms.Guna2Button();
             this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
-            this.datelable = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.mainpanel = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
@@ -65,6 +65,18 @@ namespace Hootel_Management_System
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(213, 656);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // datelable
+            // 
+            this.datelable.AutoSize = true;
+            this.datelable.BackColor = System.Drawing.Color.White;
+            this.datelable.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datelable.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.datelable.Location = new System.Drawing.Point(3, 535);
+            this.datelable.Name = "datelable";
+            this.datelable.Size = new System.Drawing.Size(21, 24);
+            this.datelable.TabIndex = 3;
+            this.datelable.Text = "?";
             // 
             // panel_slide
             // 
@@ -156,23 +168,11 @@ namespace Hootel_Management_System
             this.button_dashboard.ImageSize = new System.Drawing.Size(50, 50);
             this.button_dashboard.Location = new System.Drawing.Point(0, 313);
             this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(213, 51);
+            this.button_dashboard.Size = new System.Drawing.Size(213, 44);
             this.button_dashboard.TabIndex = 3;
             this.button_dashboard.Text = "DashBoard";
             this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
-            // 
-            // datelable
-            // 
-            this.datelable.AutoSize = true;
-            this.datelable.BackColor = System.Drawing.Color.White;
-            this.datelable.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelable.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.datelable.Location = new System.Drawing.Point(3, 535);
-            this.datelable.Name = "datelable";
-            this.datelable.Size = new System.Drawing.Size(21, 24);
-            this.datelable.TabIndex = 3;
-            this.datelable.Text = "?";
             // 
             // timer1
             // 
