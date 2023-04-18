@@ -58,19 +58,21 @@ namespace Hootel_Management_System
         {
             panel_slide.Height = button_dashboard.Height;
             panel_slide.Top = button_dashboard.Top;
+            Loadform(new RoomForm());
         }
 
         private void button_guest_Click_1(object sender, EventArgs e)
         {
             panel_slide.Height = button_guest.Height;
             panel_slide.Top = button_guest.Top;
+            Loadform(new GuestForm());
         }
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
             panel_slide.Height = button3.Height;
             panel_slide.Top = button3.Top;
-            Loadform(new GuestForm());
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

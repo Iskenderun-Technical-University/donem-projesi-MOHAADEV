@@ -18,14 +18,17 @@ namespace Hootel_Management_System
         {
             InitializeComponent();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void temiz()
         {
             DtextBox2_adi.Clear();
             DtextBox3_telfon.Clear();
             DtextBox_tc.Clear();
             DtextBox4_ode.Clear();
-           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            temiz();
         }
 
         private void button_dashboard_Click(object sender, EventArgs e)
@@ -53,6 +56,7 @@ namespace Hootel_Management_System
                     {
                         MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gettable();
+                        temiz();
                     }
                     else
                     {
@@ -99,6 +103,7 @@ namespace Hootel_Management_System
                     {
                         MessageBox.Show("Veri başarıyla Gunceldi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gettable();
+                        temiz();
                     }
                     else
                     {

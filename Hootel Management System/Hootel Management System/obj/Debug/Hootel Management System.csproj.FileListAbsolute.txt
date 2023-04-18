@@ -34,3 +34,4 @@ C:\Users\MohaR\source\repos\Hootel Management System\Hootel Management System\ob
 C:\Users\MohaR\source\repos\Hootel Management System\Hootel Management System\obj\Debug\Hootel Management System.pdb
 C:\Users\MohaR\source\repos\Hootel Management System\Hootel Management System\obj\Debug\Hootel_Management_System.MainForm.resources
 C:\Users\MohaR\source\repos\Hootel Management System\Hootel Management System\obj\Debug\Hootel_Management_System.GuestForm.resources
+C:\Users\MohaR\source\repos\Hootel Management System\Hootel Management System\obj\Debug\Hootel_Management_System.RoomForm.resources
