@@ -32,6 +32,7 @@ namespace Hootel_Management_System
             }
 
         }
+
         public DataTable getRoom()
         {
             string SelectQuery = "SELECT * FROM ROOMDB";
@@ -50,6 +51,24 @@ namespace Hootel_Management_System
             string deleteRoom = "DELETE FROM `dbhotel`.`ROOMDB` WHERE `ROOMTYPE` = @ROOMT";
             MySqlCommand command = new MySqlCommand(deleteRoom, con.GetConnection());
             command.Parameters.Add("@ROOMT", MySqlDbType.VarChar).Value = ROOMtype;
+            con.opencon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                con.closecon();
+                return true;
+            }
+            else
+            {
+                con.closecon();
+                return false;
+            }
+        }
+
+        public bool editRoom(string room)
+        {
+            string editQuerry = "UPDATE `guestdb` SET  `TC` = @TC,;";
+            MySqlCommand command = new MySqlCommand(editQuerry, con.GetConnection());
+            command.Parameters.Add("@ROOM", MySqlDbType.VarChar).Value = room;
             con.opencon();
             if (command.ExecuteNonQuery() == 1)
             {

@@ -14,6 +14,7 @@ namespace Hootel_Management_System
     public partial class GuestForm : Form
     {
         GuestClass guest = new GuestClass();
+        rezervasyonClass rez = new rezervasyonClass();
         public GuestForm()
         {
             InitializeComponent();
@@ -74,6 +75,9 @@ namespace Hootel_Management_System
         private void GuestForm_Load(object sender, EventArgs e)
         {
             gettable();
+            
+            DcomboBox1.DataSource = rez.roomByType();
+            DcomboBox1.DisplayMember = "ROOMTYPE";
         }
         private void  gettable()
         {
@@ -154,7 +158,6 @@ namespace Hootel_Management_System
             DtextBox2_adi.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             DtextBox3_telfon.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             DtextBox4_ode.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            //   DdateTimePicker1.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             DcomboBox1.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
     }

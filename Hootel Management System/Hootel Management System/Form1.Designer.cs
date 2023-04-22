@@ -37,14 +37,16 @@ namespace Hootel_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.pwd = new Guna.UI2.WinForms.Guna2TextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.pwd = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -149,6 +151,40 @@ namespace Hootel_Management_System
             this.guna2Button1.Text = "LOGIN";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // pwd
+            // 
+            this.pwd.BorderRadius = 20;
+            this.pwd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pwd.DefaultText = "";
+            this.pwd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.pwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.pwd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.pwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pwd.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pwd.Location = new System.Drawing.Point(48, 304);
+            this.pwd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.pwd.Name = "pwd";
+            this.pwd.PasswordChar = '\0';
+            this.pwd.PlaceholderText = "UserName";
+            this.pwd.SelectedText = "";
+            this.pwd.Size = new System.Drawing.Size(366, 50);
+            this.pwd.TabIndex = 7;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.Color.White;
+            this.checkBox2.Location = new System.Drawing.Point(149, 380);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(200, 28);
+            this.checkBox2.TabIndex = 5;
+            this.checkBox2.Text = "Şifreyi Göster";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(705, -37);
@@ -184,44 +220,22 @@ namespace Hootel_Management_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(481, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 619);
             this.panel1.TabIndex = 14;
             // 
-            // checkBox2
+            // label3
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(149, 380);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(200, 28);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Şifreyi Göster";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // pwd
-            // 
-            this.pwd.BorderRadius = 20;
-            this.pwd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pwd.DefaultText = "";
-            this.pwd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.pwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.pwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pwd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd.Location = new System.Drawing.Point(48, 304);
-            this.pwd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.pwd.Name = "pwd";
-            this.pwd.PasswordChar = '\0';
-            this.pwd.PlaceholderText = "UserName";
-            this.pwd.SelectedText = "";
-            this.pwd.Size = new System.Drawing.Size(366, 50);
-            this.pwd.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(489, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 29);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -240,6 +254,8 @@ namespace Hootel_Management_System
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,6 +277,7 @@ namespace Hootel_Management_System
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox pwd;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -40,8 +40,8 @@ namespace Hootel_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            panel_slide.Height = button3.Height;
-            panel_slide.Top = button3.Top;
+            panel_slide.Height = rez.Height;
+            panel_slide.Top = rez.Top;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,8 +70,8 @@ namespace Hootel_Management_System
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
-            panel_slide.Height = button3.Height;
-            panel_slide.Top = button3.Top;
+            panel_slide.Height = rez.Height;
+            panel_slide.Top = rez.Top;
             
         }
 
@@ -88,6 +88,13 @@ namespace Hootel_Management_System
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click_2(object sender, EventArgs e)
+        {
+            panel_slide.Height = rez.Height;
+            panel_slide.Top = rez.Top;
+            Loadform(new rezervasyonForm());
         }
     }
 }

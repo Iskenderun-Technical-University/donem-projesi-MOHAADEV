@@ -41,6 +41,7 @@ namespace Hootel_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.DtextBox_type = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,7 +66,7 @@ namespace Hootel_Management_System
             this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
             this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
-            this.SILMEBUT.Location = new System.Drawing.Point(400, 11);
+            this.SILMEBUT.Location = new System.Drawing.Point(311, 11);
             this.SILMEBUT.Name = "SILMEBUT";
             this.SILMEBUT.Size = new System.Drawing.Size(142, 96);
             this.SILMEBUT.TabIndex = 3;
@@ -83,7 +84,7 @@ namespace Hootel_Management_System
             this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
             this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
-            this.button_dashboard.Location = new System.Drawing.Point(258, 11);
+            this.button_dashboard.Location = new System.Drawing.Point(169, 11);
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Size = new System.Drawing.Size(142, 96);
             this.button_dashboard.TabIndex = 2;
@@ -123,6 +124,7 @@ namespace Hootel_Management_System
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.SILMEBUT);
             this.panel2.Controls.Add(this.button_dashboard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -130,6 +132,23 @@ namespace Hootel_Management_System
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(801, 107);
             this.panel2.TabIndex = 14;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(455, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 96);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "güncell";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -203,7 +222,6 @@ namespace Hootel_Management_System
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -228,6 +246,7 @@ namespace Hootel_Management_System
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 73);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 26;
@@ -246,7 +265,7 @@ namespace Hootel_Management_System
             this.dataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.ThemeStyle.HeaderStyle.Height = 30;
-            this.dataGridView1.ThemeStyle.ReadOnly = false;
+            this.dataGridView1.ThemeStyle.ReadOnly = true;
             this.dataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 8F);
@@ -298,5 +317,6 @@ namespace Hootel_Management_System
         private Guna.UI2.WinForms.Guna2CheckBox busy;
         private Guna.UI2.WinForms.Guna2CheckBox free;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
     }
 }
