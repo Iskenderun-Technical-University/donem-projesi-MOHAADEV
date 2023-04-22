@@ -22,7 +22,7 @@ namespace Hootel_Management_System
         private void button_dashboard_Click(object sender, EventArgs e)
         {
             string ROOMtype = DtextBox_type.Text;
-            //   string name = DtextBox2_adi.Text;
+
             string ROOMstatus = free.Checked ? "free" : "busy";
             Boolean insertRoom = rooms.insertRoom(ROOMtype, ROOMstatus);
             if ( DtextBox_type.Text == "")
@@ -61,7 +61,42 @@ namespace Hootel_Management_System
         }
         private void RoomForm_Load(object sender, EventArgs e)
         {
-            
+            gettable();
+        }
+
+        private void SILMEBUT_Click(object sender, EventArgs e)
+        {
+            if (DtextBox_type.Text == "")
+            {
+                MessageBox.Show(" BILGI GIRIMLISINZ", "ERORR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    string ROOMtype = DtextBox_type.Text;
+                    Boolean deleteGuest = rooms.deleteRoom(ROOMtype);
+                    if (deleteGuest)
+                    {
+                        MessageBox.Show("silindi ", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        gettable();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ERORO", "bilgi Kaydedilmedi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DtextBox_type.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
     }
 }

@@ -33,16 +33,14 @@ namespace Hootel_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.datelable = new System.Windows.Forms.Label();
+            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
             this.button3 = new Guna.UI2.WinForms.Guna2Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_guest = new Guna.UI2.WinForms.Guna2Button();
             this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.mainpanel = new System.Windows.Forms.Panel();
             this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,8 +51,7 @@ namespace Hootel_Management_System
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(52)))));
-            this.guna2Panel1.Controls.Add(this.datelable);
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
             this.guna2Panel1.Controls.Add(this.panel_slide);
             this.guna2Panel1.Controls.Add(this.button3);
             this.guna2Panel1.Controls.Add(this.button1);
@@ -67,26 +64,32 @@ namespace Hootel_Management_System
             this.guna2Panel1.Size = new System.Drawing.Size(213, 656);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // datelable
+            // panel_slide
             // 
-            this.datelable.BackColor = System.Drawing.Color.White;
-            this.datelable.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datelable.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.datelable.Location = new System.Drawing.Point(3, 548);
-            this.datelable.Name = "datelable";
-            this.datelable.Size = new System.Drawing.Size(35, 23);
-            this.datelable.TabIndex = 3;
-            this.datelable.Text = "?";
+            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(97)))), ((int)(((byte)(177)))));
+            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.panel_slide.ForeColor = System.Drawing.Color.White;
+            this.panel_slide.Location = new System.Drawing.Point(203, 161);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(10, 58);
+            this.panel_slide.TabIndex = 7;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(208)))));
             this.button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
             this.button3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.button3.ImageSize = new System.Drawing.Size(50, 50);
@@ -99,12 +102,12 @@ namespace Hootel_Management_System
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(206)))), ((int)(((byte)(175)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(0, 574);
@@ -129,13 +132,14 @@ namespace Hootel_Management_System
             // 
             // button_guest
             // 
-            this.button_guest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button_guest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
             this.button_guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.button_guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.button_guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.button_guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_guest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
             this.button_guest.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_guest.ForeColor = System.Drawing.Color.White;
+            this.button_guest.ForeColor = System.Drawing.Color.Black;
             this.button_guest.Image = ((System.Drawing.Image)(resources.GetObject("button_guest.Image")));
             this.button_guest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.button_guest.ImageSize = new System.Drawing.Size(50, 50);
@@ -143,19 +147,20 @@ namespace Hootel_Management_System
             this.button_guest.Name = "button_guest";
             this.button_guest.Size = new System.Drawing.Size(210, 57);
             this.button_guest.TabIndex = 3;
-            this.button_guest.Text = "DashBoard";
+            this.button_guest.Text = "Guest";
             this.button_guest.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_guest.Click += new System.EventHandler(this.button_guest_Click_1);
             // 
             // button_dashboard
             // 
-            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
             this.button_dashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.button_dashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.button_dashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.button_dashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_dashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
             this.button_dashboard.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_dashboard.ForeColor = System.Drawing.Color.White;
+            this.button_dashboard.ForeColor = System.Drawing.Color.Black;
             this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
             this.button_dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.button_dashboard.ImageSize = new System.Drawing.Size(50, 50);
@@ -163,13 +168,9 @@ namespace Hootel_Management_System
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Size = new System.Drawing.Size(213, 58);
             this.button_dashboard.TabIndex = 3;
-            this.button_dashboard.Text = "DashBoard";
+            this.button_dashboard.Text = "ROOMS";
             this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // mainpanel
             // 
@@ -187,30 +188,14 @@ namespace Hootel_Management_System
             this.guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
+            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
             this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton9.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton9.Location = new System.Drawing.Point(213, 3);
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.Size = new System.Drawing.Size(790, 16);
             this.guna2GradientButton9.TabIndex = 6;
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.panel_slide.ForeColor = System.Drawing.Color.White;
-            this.panel_slide.Location = new System.Drawing.Point(203, 161);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 58);
-            this.panel_slide.TabIndex = 7;
             // 
             // MainForm
             // 
@@ -242,8 +227,6 @@ namespace Hootel_Management_System
         private Guna.UI2.WinForms.Guna2Button button_dashboard;
         private Guna.UI2.WinForms.Guna2Button button_guest;
         private Guna.UI2.WinForms.Guna2Button button3;
-        private System.Windows.Forms.Label datelable;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel mainpanel;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton9;
         private Guna.UI2.WinForms.Guna2GradientButton panel_slide;

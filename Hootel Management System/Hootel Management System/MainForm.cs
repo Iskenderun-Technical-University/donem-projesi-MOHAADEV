@@ -77,12 +77,12 @@ namespace Hootel_Management_System
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            datelable.Text = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
+            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

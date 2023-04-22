@@ -45,5 +45,22 @@ namespace Hootel_Management_System
             return table;
 
         }
+        public bool deleteRoom(string ROOMtype)
+        {
+            string deleteRoom = "DELETE FROM `dbhotel`.`ROOMDB` WHERE `ROOMTYPE` = @ROOMT";
+            MySqlCommand command = new MySqlCommand(deleteRoom, con.GetConnection());
+            command.Parameters.Add("@ROOMT", MySqlDbType.VarChar).Value = ROOMtype;
+            con.opencon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                con.closecon();
+                return true;
+            }
+            else
+            {
+                con.closecon();
+                return false;
+            }
+        }
     }
 }

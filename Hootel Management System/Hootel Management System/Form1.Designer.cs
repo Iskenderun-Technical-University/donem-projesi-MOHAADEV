@@ -30,10 +30,8 @@ namespace Hootel_Management_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pwd = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernamee = new Guna.UI2.WinForms.Guna2TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,7 +40,10 @@ namespace Hootel_Management_System
             this.button1 = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.pwd = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,27 +66,6 @@ namespace Hootel_Management_System
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 23);
             this.label4.TabIndex = 10;
-            // 
-            // pwd
-            // 
-            this.pwd.BorderRadius = 20;
-            this.pwd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pwd.DefaultText = "";
-            this.pwd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.pwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.pwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd.Font = new System.Drawing.Font("Calibri", 9F);
-            this.pwd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd.Location = new System.Drawing.Point(48, 276);
-            this.pwd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pwd.Name = "pwd";
-            this.pwd.PasswordChar = '\0';
-            this.pwd.PlaceholderText = "Password";
-            this.pwd.SelectedText = "";
-            this.pwd.Size = new System.Drawing.Size(366, 50);
-            this.pwd.TabIndex = 7;
             // 
             // usernamee
             // 
@@ -113,7 +93,7 @@ namespace Hootel_Management_System
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(48, 378);
+            this.checkBox1.Location = new System.Drawing.Point(48, 426);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(164, 28);
             this.checkBox1.TabIndex = 5;
@@ -125,7 +105,7 @@ namespace Hootel_Management_System
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(247, 382);
+            this.label5.Location = new System.Drawing.Point(247, 430);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(190, 24);
             this.label5.TabIndex = 6;
@@ -135,20 +115,21 @@ namespace Hootel_Management_System
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.Azure;
             this.guna2Panel1.BorderRadius = 30;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Panel1.BorderThickness = 2;
             this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.pwd);
             this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.pwd);
             this.guna2Panel1.Controls.Add(this.usernamee);
+            this.guna2Panel1.Controls.Add(this.checkBox2);
             this.guna2Panel1.Controls.Add(this.checkBox1);
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Location = new System.Drawing.Point(160, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(454, 524);
+            this.guna2Panel1.Size = new System.Drawing.Size(479, 619);
             this.guna2Panel1.TabIndex = 11;
             // 
             // guna2Button1
@@ -161,7 +142,7 @@ namespace Hootel_Management_System
             this.guna2Button1.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(102, 424);
+            this.guna2Button1.Location = new System.Drawing.Point(101, 474);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(281, 62);
             this.guna2Button1.TabIndex = 8;
@@ -185,23 +166,70 @@ namespace Hootel_Management_System
             // 
             this.guna2Elipse2.TargetControl = this;
             // 
-            // button2
+            // label2
             // 
-            this.button2.Location = new System.Drawing.Point(713, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "x";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(764, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 24);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
+            this.label2.MouseHover += new System.EventHandler(this.label2_MouseHover);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
+            this.panel1.Location = new System.Drawing.Point(481, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(521, 619);
+            this.panel1.TabIndex = 14;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.Color.White;
+            this.checkBox2.Location = new System.Drawing.Point(149, 380);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(200, 28);
+            this.checkBox2.TabIndex = 5;
+            this.checkBox2.Text = "Şifreyi Göster";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // pwd
+            // 
+            this.pwd.BorderRadius = 20;
+            this.pwd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pwd.DefaultText = "";
+            this.pwd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.pwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.pwd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.pwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pwd.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pwd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pwd.Location = new System.Drawing.Point(48, 304);
+            this.pwd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.pwd.Name = "pwd";
+            this.pwd.PasswordChar = '\0';
+            this.pwd.PlaceholderText = "UserName";
+            this.pwd.SelectedText = "";
+            this.pwd.Size = new System.Drawing.Size(366, 50);
+            this.pwd.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 526);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1003, 623);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.button1);
@@ -221,7 +249,6 @@ namespace Hootel_Management_System
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox pwd;
         private Guna.UI2.WinForms.Guna2TextBox usernamee;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
@@ -230,7 +257,10 @@ namespace Hootel_Management_System
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2TextBox pwd;
     }
 }
 

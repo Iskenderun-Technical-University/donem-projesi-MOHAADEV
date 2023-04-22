@@ -69,7 +69,40 @@ namespace Hootel_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pwd.UseSystemPasswordChar = true;
+        }
+        
 
+        private void label2_MouseHover(object sender, EventArgs e)
+        {
+            label2.ForeColor = Color.Red;
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.ForeColor = Color.White;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                pwd.UseSystemPasswordChar = false;
+                var checkbox = (CheckBox)sender;
+                checkbox.Text = "Şifreyi Gizle";
+            }
+            else
+            {
+                pwd.UseSystemPasswordChar = true;
+                var checkbox = (CheckBox)sender;
+                checkbox.Text = "Şifreyi Göster";
+            }
+           
         }
     }
 }
