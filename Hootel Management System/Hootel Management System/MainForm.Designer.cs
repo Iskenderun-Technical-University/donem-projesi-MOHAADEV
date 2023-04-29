@@ -34,13 +34,13 @@ namespace Hootel_Management_System
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.mainpanel = new System.Windows.Forms.Panel();
-            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.rez = new Guna.UI2.WinForms.Guna2Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_guest = new Guna.UI2.WinForms.Guna2Button();
             this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.mainpanel = new System.Windows.Forms.Panel();
+            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +61,7 @@ namespace Hootel_Management_System
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(213, 656);
+            this.guna2Panel1.Size = new System.Drawing.Size(216, 656);
             this.guna2Panel1.TabIndex = 0;
             // 
             // panel_slide
@@ -80,31 +80,6 @@ namespace Hootel_Management_System
             this.panel_slide.Size = new System.Drawing.Size(10, 58);
             this.panel_slide.TabIndex = 7;
             // 
-            // mainpanel
-            // 
-            this.mainpanel.BackColor = System.Drawing.SystemColors.Window;
-            this.mainpanel.Location = new System.Drawing.Point(216, 12);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(790, 644);
-            this.mainpanel.TabIndex = 4;
-            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // guna2GradientButton9
-            // 
-            this.guna2GradientButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
-            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
-            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton9.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(213, 3);
-            this.guna2GradientButton9.Name = "guna2GradientButton9";
-            this.guna2GradientButton9.Size = new System.Drawing.Size(790, 16);
-            this.guna2GradientButton9.TabIndex = 6;
-            // 
             // rez
             // 
             this.rez.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(208)))));
@@ -120,7 +95,7 @@ namespace Hootel_Management_System
             this.rez.ImageSize = new System.Drawing.Size(50, 50);
             this.rez.Location = new System.Drawing.Point(0, 368);
             this.rez.Name = "rez";
-            this.rez.Size = new System.Drawing.Size(210, 58);
+            this.rez.Size = new System.Drawing.Size(216, 58);
             this.rez.TabIndex = 3;
             this.rez.Text = "Rezervasyon";
             this.rez.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -138,7 +113,7 @@ namespace Hootel_Management_System
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 574);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 82);
+            this.button1.Size = new System.Drawing.Size(216, 82);
             this.button1.TabIndex = 5;
             this.button1.Text = "Logout";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -151,7 +126,7 @@ namespace Hootel_Management_System
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -197,6 +172,31 @@ namespace Hootel_Management_System
             this.button_dashboard.Text = "ROOMS";
             this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.BackColor = System.Drawing.SystemColors.Window;
+            this.mainpanel.Location = new System.Drawing.Point(216, 12);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(790, 644);
+            this.mainpanel.TabIndex = 4;
+            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // guna2GradientButton9
+            // 
+            this.guna2GradientButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton9.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
+            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
+            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton9.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton9.Location = new System.Drawing.Point(213, 3);
+            this.guna2GradientButton9.Name = "guna2GradientButton9";
+            this.guna2GradientButton9.Size = new System.Drawing.Size(790, 16);
+            this.guna2GradientButton9.TabIndex = 6;
             // 
             // MainForm
             // 

@@ -30,9 +30,9 @@ namespace Hootel_Management_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rezervasyonForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -40,14 +40,18 @@ namespace Hootel_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.combobox = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SILMEBUT = new System.Windows.Forms.Button();
             this.button_dashboard = new System.Windows.Forms.Button();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tccomboBox1 = new System.Windows.Forms.ComboBox();
+            this.roomcombobox = new System.Windows.Forms.ComboBox();
+            this.dateinguna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dateoutguna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,27 +66,27 @@ namespace Hootel_Management_System
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 73);
@@ -122,7 +126,7 @@ namespace Hootel_Management_System
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(67, 480);
+            this.label2.Location = new System.Drawing.Point(22, 480);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 24);
             this.label2.TabIndex = 16;
@@ -158,27 +162,6 @@ namespace Hootel_Management_System
             this.label1.TabIndex = 2;
             this.label1.Text = "Otel Yönetim Sistemi";
             // 
-            // combobox
-            // 
-            this.combobox.FormattingEnabled = true;
-            this.combobox.Items.AddRange(new object[] {
-            "201",
-            "202",
-            "203",
-            "204",
-            "301",
-            "302",
-            "303",
-            "304",
-            "401",
-            "402",
-            "501"});
-            this.combobox.Location = new System.Drawing.Point(527, 481);
-            this.combobox.Name = "combobox";
-            this.combobox.Size = new System.Drawing.Size(121, 24);
-            this.combobox.TabIndex = 24;
-            this.combobox.SelectedIndexChanged += new System.EventHandler(this.combobox_SelectedIndexChanged);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button3);
@@ -207,6 +190,7 @@ namespace Hootel_Management_System
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseCompatibleTextRendering = true;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -257,27 +241,86 @@ namespace Hootel_Management_System
             this.button_dashboard.Text = "Kaydet";
             this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button_dashboard.UseVisualStyleBackColor = false;
+            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
             // 
-            // comboBox1
+            // tccomboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "201",
-            "202",
-            "203",
-            "204",
-            "301",
-            "302",
-            "303",
-            "304",
-            "401",
-            "402",
-            "501"});
-            this.comboBox1.Location = new System.Drawing.Point(118, 480);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(239, 24);
-            this.comboBox1.TabIndex = 24;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.combobox_SelectedIndexChanged);
+            this.tccomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tccomboBox1.FormattingEnabled = true;
+            this.tccomboBox1.Items.AddRange(new object[] {
+            ""});
+            this.tccomboBox1.Location = new System.Drawing.Point(73, 480);
+            this.tccomboBox1.Name = "tccomboBox1";
+            this.tccomboBox1.Size = new System.Drawing.Size(239, 24);
+            this.tccomboBox1.TabIndex = 24;
+            this.tccomboBox1.SelectedIndexChanged += new System.EventHandler(this.combobox_SelectedIndexChanged);
+            // 
+            // roomcombobox
+            // 
+            this.roomcombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.roomcombobox.FormattingEnabled = true;
+            this.roomcombobox.Items.AddRange(new object[] {
+            "102",
+            "203"});
+            this.roomcombobox.Location = new System.Drawing.Point(73, 531);
+            this.roomcombobox.Name = "roomcombobox";
+            this.roomcombobox.Size = new System.Drawing.Size(239, 24);
+            this.roomcombobox.TabIndex = 26;
+            this.roomcombobox.TextUpdate += new System.EventHandler(this.combobox_TextUpdate);
+            this.roomcombobox.SelectedValueChanged += new System.EventHandler(this.combobox_SelectedValueChanged);
+            this.roomcombobox.Click += new System.EventHandler(this.combobox_Click);
+            // 
+            // dateinguna2DateTimePicker1
+            // 
+            this.dateinguna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.dateinguna2DateTimePicker1.Checked = true;
+            this.dateinguna2DateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateinguna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dateinguna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateinguna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateinguna2DateTimePicker1.Location = new System.Drawing.Point(661, 481);
+            this.dateinguna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateinguna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateinguna2DateTimePicker1.Name = "dateinguna2DateTimePicker1";
+            this.dateinguna2DateTimePicker1.Size = new System.Drawing.Size(128, 24);
+            this.dateinguna2DateTimePicker1.TabIndex = 27;
+            this.dateinguna2DateTimePicker1.Value = new System.DateTime(2023, 4, 29, 10, 46, 59, 0);
+            // 
+            // dateoutguna2DateTimePicker2
+            // 
+            this.dateoutguna2DateTimePicker2.BackColor = System.Drawing.Color.Transparent;
+            this.dateoutguna2DateTimePicker2.Checked = true;
+            this.dateoutguna2DateTimePicker2.CustomFormat = "dd/MM/yyyy";
+            this.dateoutguna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dateoutguna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateoutguna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateoutguna2DateTimePicker2.Location = new System.Drawing.Point(661, 523);
+            this.dateoutguna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateoutguna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateoutguna2DateTimePicker2.Name = "dateoutguna2DateTimePicker2";
+            this.dateoutguna2DateTimePicker2.Size = new System.Drawing.Size(128, 24);
+            this.dateoutguna2DateTimePicker2.TabIndex = 27;
+            this.dateoutguna2DateTimePicker2.Value = new System.DateTime(2023, 4, 29, 10, 46, 59, 0);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(595, 481);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 24);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "JOIN";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(595, 523);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 24);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "OUT";
             // 
             // rezervasyonForm
             // 
@@ -285,11 +328,15 @@ namespace Hootel_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(801, 660);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateoutguna2DateTimePicker2);
+            this.Controls.Add(this.dateinguna2DateTimePicker1);
+            this.Controls.Add(this.roomcombobox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.combobox);
+            this.Controls.Add(this.tccomboBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "rezervasyonForm";
@@ -312,13 +359,17 @@ namespace Hootel_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox combobox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button SILMEBUT;
         private System.Windows.Forms.Button button_dashboard;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tccomboBox1;
+        private System.Windows.Forms.ComboBox roomcombobox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateoutguna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dateinguna2DateTimePicker1;
     }
 }
