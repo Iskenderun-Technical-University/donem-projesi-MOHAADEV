@@ -90,5 +90,23 @@ namespace Hootel_Management_System
 
         }
 
+        public bool deleterez(string tc)
+        {
+            string deleteGuest = "DELETE FROM `dbhotel`.`rezdb` WHERE `TC` = @TC";
+            MySqlCommand command = new MySqlCommand(deleteGuest, con.GetConnection());
+            command.Parameters.Add("@TC", MySqlDbType.VarChar).Value = tc;
+            con.opencon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                con.closecon();
+                return true;
+            }
+            else
+            {
+                con.closecon();
+                return false;
+            }
+        }
+
     }
 }

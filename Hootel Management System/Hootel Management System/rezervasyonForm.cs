@@ -25,6 +25,7 @@ namespace Hootel_Management_System
             roomcombobox.DisplayMember = "ROOMTYPE";
             dataGridView1.DataSource = rez.getRez();
             gettable();
+            label5.Text = DateTime.Now.ToString();
 
         }
 
@@ -89,6 +90,60 @@ namespace Hootel_Management_System
         private void gettable()
         {
             dataGridView1.DataSource = rez.getRez();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tccomboBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            roomcombobox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+        }
+
+        private void SILMEBUT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tc = tccomboBox1.Text;
+                string room = roomcombobox.Text;
+
+                if (rez.deleterez(tc) && rez.revUpdate(room, "free"))
+                {
+                    MessageBox.Show("done ", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    gettable();
+
+
+                }
+                else
+                {
+                    MessageBox.Show("bilgiler kaydedilmedi", "bilgi Kaydedilmedi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void tccomboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ( e.KeyChar != '\b')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void roomcombobox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')
+            {
+                e.Handled = true;
+            }
         }
     }
 }

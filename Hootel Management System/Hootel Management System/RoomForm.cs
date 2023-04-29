@@ -98,5 +98,33 @@ namespace Hootel_Management_System
         {
             DtextBox_type.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string roomnum = DtextBox_type.Text;
+                string status = free.Checked ? "free" : "busy";
+
+
+                Boolean editGuest = rooms.editroom(status, roomnum);
+                if (editGuest)
+                {
+                    MessageBox.Show("Veri başarıyla Gunceldi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    gettable();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("TC MUVJOD DEGI", "bilgi Kaydedilmedi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
-}
+    }
+
