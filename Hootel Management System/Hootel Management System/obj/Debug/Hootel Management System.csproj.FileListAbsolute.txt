@@ -73,3 +73,4 @@ C:\Users\MohaR\Desktop\donem-projesi-MOHAADEV\Hootel Management System\Hootel Ma
 C:\Users\MohaR\Desktop\donem-projesi-MOHAADEV\Hootel Management System\Hootel Management System\obj\Debug\Hootel Management System.exe
 C:\Users\MohaR\Desktop\donem-projesi-MOHAADEV\Hootel Management System\Hootel Management System\obj\Debug\Hootel Management System.pdb
 C:\Users\MohaR\Desktop\donem-projesi-MOHAADEV\Hootel Management System\Hootel Management System\obj\Debug\Hootel_Management_System.rezervasyonForm.resources
+C:\Users\MohaR\Desktop\donem-projesi-MOHAADEV\Hootel Management System\Hootel Management System\obj\Debug\Hootel_Management_System.DASHBOARD.resources

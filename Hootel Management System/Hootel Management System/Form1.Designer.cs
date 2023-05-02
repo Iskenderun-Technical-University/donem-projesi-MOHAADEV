@@ -167,7 +167,7 @@ namespace Hootel_Management_System
             this.pwd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.pwd.Name = "pwd";
             this.pwd.PasswordChar = '\0';
-            this.pwd.PlaceholderText = "UserName";
+            this.pwd.PlaceholderText = "PassWord";
             this.pwd.SelectedText = "";
             this.pwd.Size = new System.Drawing.Size(366, 50);
             this.pwd.TabIndex = 7;

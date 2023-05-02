@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace Hootel_Management_System
 {
     public partial class MainForm : Form
     {
+        dbconnect con = new dbconnect();
         public MainForm()
         {
             InitializeComponent();
+           
         }
         public void Loadform(object Form)
         {
@@ -82,7 +84,7 @@ namespace Hootel_Management_System
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            Loadform(new GuestForm());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -95,6 +97,13 @@ namespace Hootel_Management_System
             panel_slide.Height = rez.Height;
             panel_slide.Top = rez.Top;
             Loadform(new rezervasyonForm());
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            panel_slide.Height = rez.Height;
+            panel_slide.Top = rez.Top;
+            Loadform(new DASHBOARD());
         }
     }
 }

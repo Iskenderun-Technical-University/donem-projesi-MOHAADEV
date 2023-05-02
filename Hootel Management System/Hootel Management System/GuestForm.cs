@@ -40,8 +40,9 @@ namespace Hootel_Management_System
             string pay = DtextBox4_ode.Text;
             string date = DdateTimePicker1.Text;
             string room = DcomboBox1.Text;
+            string meth = METHODcomboBox1.Text;
 
-            Boolean insertGuest = guest.insertGuest(tc, name, tele, pay,date , room);
+            Boolean insertGuest = guest.insertGuest(tc, name, tele, pay,date , room, meth);
             if (DtextBox2_adi.Text == "" || DtextBox_tc.Text == "")
             {
                 MessageBox.Show("Bilgi GIRIMLISINZ", "ERORR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -159,6 +160,22 @@ namespace Hootel_Management_System
             DtextBox3_telfon.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             DtextBox4_ode.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             DcomboBox1.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+        }
+
+        private void METHODcomboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void DcomboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -31,9 +31,9 @@ namespace Hootel_Management_System
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuestForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,8 +52,9 @@ namespace Hootel_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.DtextBox4_ode = new System.Windows.Forms.TextBox();
             this.DdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.DcomboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.METHODcomboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DcomboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,9 +101,9 @@ namespace Hootel_Management_System
             this.panel2.Controls.Add(this.SILMEBUT);
             this.panel2.Controls.Add(this.button_dashboard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 553);
+            this.panel2.Location = new System.Drawing.Point(0, 574);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(801, 107);
+            this.panel2.Size = new System.Drawing.Size(801, 86);
             this.panel2.TabIndex = 1;
             // 
             // button3
@@ -113,9 +114,9 @@ namespace Hootel_Management_System
             this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Transparent;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(544, 8);
+            this.button3.Location = new System.Drawing.Point(544, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 96);
+            this.button3.Size = new System.Drawing.Size(142, 85);
             this.button3.TabIndex = 5;
             this.button3.Text = "temiz";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -132,9 +133,9 @@ namespace Hootel_Management_System
             this.button2.ForeColor = System.Drawing.Color.Transparent;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(402, 8);
+            this.button2.Location = new System.Drawing.Point(402, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 96);
+            this.button2.Size = new System.Drawing.Size(142, 85);
             this.button2.TabIndex = 4;
             this.button2.Text = "güncell";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -149,9 +150,9 @@ namespace Hootel_Management_System
             this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
             this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
-            this.SILMEBUT.Location = new System.Drawing.Point(260, 8);
+            this.SILMEBUT.Location = new System.Drawing.Point(260, 0);
             this.SILMEBUT.Name = "SILMEBUT";
-            this.SILMEBUT.Size = new System.Drawing.Size(142, 96);
+            this.SILMEBUT.Size = new System.Drawing.Size(142, 85);
             this.SILMEBUT.TabIndex = 3;
             this.SILMEBUT.Text = "Silme";
             this.SILMEBUT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -167,9 +168,9 @@ namespace Hootel_Management_System
             this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
             this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
-            this.button_dashboard.Location = new System.Drawing.Point(118, 8);
+            this.button_dashboard.Location = new System.Drawing.Point(118, 0);
             this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(142, 96);
+            this.button_dashboard.Size = new System.Drawing.Size(142, 85);
             this.button_dashboard.TabIndex = 2;
             this.button_dashboard.Text = "Kaydet";
             this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -227,7 +228,7 @@ namespace Hootel_Management_System
             // 
             this.DtextBox3_telfon.Location = new System.Drawing.Point(574, 478);
             this.DtextBox3_telfon.Name = "DtextBox3_telfon";
-            this.DtextBox3_telfon.Size = new System.Drawing.Size(145, 24);
+            this.DtextBox3_telfon.Size = new System.Drawing.Size(202, 24);
             this.DtextBox3_telfon.TabIndex = 6;
             // 
             // label5
@@ -235,7 +236,7 @@ namespace Hootel_Management_System
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(100, 522);
+            this.label5.Location = new System.Drawing.Point(16, 524);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 24);
             this.label5.TabIndex = 9;
@@ -243,7 +244,7 @@ namespace Hootel_Management_System
             // 
             // DtextBox4_ode
             // 
-            this.DtextBox4_ode.Location = new System.Drawing.Point(220, 522);
+            this.DtextBox4_ode.Location = new System.Drawing.Point(136, 524);
             this.DtextBox4_ode.Name = "DtextBox4_ode";
             this.DtextBox4_ode.Size = new System.Drawing.Size(145, 24);
             this.DtextBox4_ode.TabIndex = 8;
@@ -251,47 +252,36 @@ namespace Hootel_Management_System
             // DdateTimePicker1
             // 
             this.DdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DdateTimePicker1.Location = new System.Drawing.Point(397, 523);
+            this.DdateTimePicker1.Location = new System.Drawing.Point(315, 525);
             this.DdateTimePicker1.Name = "DdateTimePicker1";
             this.DdateTimePicker1.Size = new System.Drawing.Size(200, 24);
             this.DdateTimePicker1.TabIndex = 10;
-            // 
-            // DcomboBox1
-            // 
-            this.DcomboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.DcomboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
-            this.DcomboBox1.FormattingEnabled = true;
-            this.DcomboBox1.Location = new System.Drawing.Point(627, 522);
-            this.DcomboBox1.Name = "DcomboBox1";
-            this.DcomboBox1.Size = new System.Drawing.Size(121, 24);
-            this.DcomboBox1.TabIndex = 11;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 73);
@@ -312,7 +302,7 @@ namespace Hootel_Management_System
             this.dataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            this.dataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 8F);
             this.dataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -327,16 +317,50 @@ namespace Hootel_Management_System
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
+            // METHODcomboBox1
+            // 
+            this.METHODcomboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.METHODcomboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.METHODcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.METHODcomboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.METHODcomboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.METHODcomboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.METHODcomboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.METHODcomboBox1.ItemHeight = 30;
+            this.METHODcomboBox1.Items.AddRange(new object[] {
+            "NAKIT",
+            "VISA"});
+            this.METHODcomboBox1.Location = new System.Drawing.Point(544, 522);
+            this.METHODcomboBox1.Name = "METHODcomboBox1";
+            this.METHODcomboBox1.Size = new System.Drawing.Size(107, 36);
+            this.METHODcomboBox1.TabIndex = 13;
+            // 
+            // DcomboBox1
+            // 
+            this.DcomboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.DcomboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DcomboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DcomboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.DcomboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.DcomboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.DcomboBox1.ItemHeight = 30;
+            this.DcomboBox1.Location = new System.Drawing.Point(682, 524);
+            this.DcomboBox1.Name = "DcomboBox1";
+            this.DcomboBox1.Size = new System.Drawing.Size(107, 36);
+            this.DcomboBox1.TabIndex = 14;
+            // 
             // GuestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(801, 660);
+            this.Controls.Add(this.DcomboBox1);
+            this.Controls.Add(this.METHODcomboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.DcomboBox1);
             this.Controls.Add(this.DdateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DtextBox4_ode);
@@ -380,7 +404,8 @@ namespace Hootel_Management_System
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button SILMEBUT;
-        private System.Windows.Forms.ComboBox DcomboBox1;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2ComboBox DcomboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox METHODcomboBox1;
     }
 }

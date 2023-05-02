@@ -25,12 +25,7 @@ namespace Hootel_Management_System
             roomcombobox.DisplayMember = "ROOMTYPE";
             dataGridView1.DataSource = rez.getRez();
             gettable();
-            label5.Text = DateTime.Now.ToString();
-
-        }
-
-        private void combobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            
 
         }
 
@@ -42,21 +37,6 @@ namespace Hootel_Management_System
         private void combobox_Click(object sender, EventArgs e)
         {
             
-        }
-
-        private void combobox_TextUpdate(object sender, EventArgs e)
-        {
-           
-
-            
-        }
-
-        private void combobox_SelectedValueChanged(object sender, EventArgs e)
-        {
-            string room = roomcombobox.Text.ToString();
-
-            tccomboBox1.DataSource = rez.CoustmerByRoom(room);
-            tccomboBox1.DisplayMember = "TC";
         }
 
         private void button_dashboard_Click(object sender, EventArgs e)
@@ -92,11 +72,6 @@ namespace Hootel_Management_System
             dataGridView1.DataSource = rez.getRez();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            
-        }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             tccomboBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -130,20 +105,13 @@ namespace Hootel_Management_System
 
         }
 
-        private void tccomboBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ( e.KeyChar != '\b')
-            {
-                e.Handled = true;
-            }
-        }
 
-        private void roomcombobox_KeyPress(object sender, KeyPressEventArgs e)
+        private void roomcombobox_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (e.KeyChar != '\b')
-            {
-                e.Handled = true;
-            }
+            string room = roomcombobox.Text.ToString();
+
+            tccomboBox1.DataSource = rez.CoustmerByRoom(room);
+            tccomboBox1.DisplayMember = "TC";
         }
     }
 }

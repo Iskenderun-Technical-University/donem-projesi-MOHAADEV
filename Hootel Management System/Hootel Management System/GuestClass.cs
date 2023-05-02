@@ -14,9 +14,9 @@ namespace Hootel_Management_System
         dbconnect con = new dbconnect();
 
         // insert Command
-        public bool insertGuest(string tc, string name, string tel, string pay, string date, string room)
+        public bool insertGuest(string tc, string name, string tel, string pay, string date, string room , string method)
         {
-            string insertQuerry = "INSERT INTO GUESTDB (TC , NAME_LAST , TELE ,PAYDB , JOIN_DATE , ROOM ) values(@TC ,@NMLS ,@TELE ,@PAY ,@DATE ,@ROOM);";
+            string insertQuerry = "INSERT INTO GUESTDB (TC , NAME_LAST , TELE ,PAYDB , JOIN_DATE , ROOM ,METHOD) values(@TC ,@NMLS ,@TELE ,@PAY ,@DATE ,@ROOM,@METH);";
             MySqlCommand command = new MySqlCommand(insertQuerry, con.GetConnection());
             command.Parameters.Add("@TC", MySqlDbType.VarChar).Value = tc;
             command.Parameters.Add("@NMLS", MySqlDbType.VarChar).Value = name;
@@ -24,6 +24,7 @@ namespace Hootel_Management_System
             command.Parameters.Add("@PAY", MySqlDbType.VarChar).Value = pay;
             command.Parameters.Add("@DATE", MySqlDbType.VarChar).Value = date;
             command.Parameters.Add("@ROOM", MySqlDbType.VarChar).Value = room;
+            command.Parameters.Add("@METH", MySqlDbType.VarChar).Value = method;
             con.opencon();
             if (command.ExecuteNonQuery() == 1)
             {
