@@ -10,6 +10,6 @@ Ve ayrıca uygulamamızda keşfetmeniz için çok ama çok daha fazlası sizi be
 
 
 ## Use Case Diagram
-![use-case-diagram](./UML_DATABASE/UMLSQL.jpg)
+![use-case-diagram](./UML_DATABASE/UMLSQL.png)
 
 ## MOHAMMAD RAMEZ MOHAMMAD 212523502
