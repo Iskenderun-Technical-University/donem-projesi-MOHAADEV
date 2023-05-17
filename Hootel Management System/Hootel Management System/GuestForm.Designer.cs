@@ -345,7 +345,7 @@ namespace Hootel_Management_System
             this.DcomboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.DcomboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.DcomboBox1.ItemHeight = 30;
-            this.DcomboBox1.Location = new System.Drawing.Point(682, 524);
+            this.DcomboBox1.Location = new System.Drawing.Point(682, 522);
             this.DcomboBox1.Name = "DcomboBox1";
             this.DcomboBox1.Size = new System.Drawing.Size(107, 36);
             this.DcomboBox1.TabIndex = 14;

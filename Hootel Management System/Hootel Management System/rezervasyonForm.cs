@@ -23,7 +23,6 @@ namespace Hootel_Management_System
         {
             roomcombobox.DataSource = rez.roomByType();
             roomcombobox.DisplayMember = "ROOMTYPE";
-            dataGridView1.DataSource = rez.getRez();
             gettable();
             
 
@@ -32,11 +31,6 @@ namespace Hootel_Management_System
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void combobox_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void button_dashboard_Click(object sender, EventArgs e)
@@ -52,8 +46,6 @@ namespace Hootel_Management_System
                     {
                         MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gettable();
-
-
                     }
                     else
                     {
@@ -72,30 +64,20 @@ namespace Hootel_Management_System
             dataGridView1.DataSource = rez.getRez();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            tccomboBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            roomcombobox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-        }
-
         private void SILMEBUT_Click(object sender, EventArgs e)
         {
             try
             {
                 string tc = tccomboBox1.Text;
                 string room = roomcombobox.Text;
-
                 if (rez.deleterez(tc) && rez.revUpdate(room, "free"))
                 {
                     MessageBox.Show("done ", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     gettable();
-
-
                 }
                 else
                 {
                     MessageBox.Show("bilgiler kaydedilmedi", "bilgi Kaydedilmedi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
             }
             catch (Exception ex)
@@ -108,8 +90,18 @@ namespace Hootel_Management_System
 
         private void roomcombobox_SelectedValueChanged(object sender, EventArgs e)
         {
-            string room = roomcombobox.Text.ToString();
+            
+        }
 
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            tccomboBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            roomcombobox.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+        }
+
+        private void roomcombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string room = roomcombobox.Text.ToString();
             tccomboBox1.DataSource = rez.CoustmerByRoom(room);
             tccomboBox1.DisplayMember = "TC";
         }

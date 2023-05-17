@@ -14,9 +14,8 @@ namespace Hootel_Management_System
 
         public DataTable roomByType()
         {
-           string SelectQuery = "SELECT `ROOMTYPE` FROM `dbhotel`.`roomdb` where STATUSROOM = 'free';";
+           string SelectQuery = "SELECT `ROOMTYPE` FROM `dbhotel`.`roomdb`;";
             MySqlCommand command = new MySqlCommand(SelectQuery, con.GetConnection());
-         //   command.Parameters.Add("@type", MySqlDbType.VarChar).Value = type;
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
             adapter.SelectCommand = command;
@@ -59,10 +58,8 @@ namespace Hootel_Management_System
             MySqlCommand command = new MySqlCommand(SelectQuery, con.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
-
             adapter.SelectCommand = command;
             adapter.Fill(table);
-
             return table;
 
         }

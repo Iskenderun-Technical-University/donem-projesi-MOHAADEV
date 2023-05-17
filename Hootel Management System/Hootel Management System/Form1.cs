@@ -62,11 +62,6 @@ namespace Hootel_Management_System
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             pwd.UseSystemPasswordChar = true;

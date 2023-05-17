@@ -64,23 +64,6 @@ namespace Hootel_Management_System
             }
         }
 
-        public bool editRoom(string room)
-        {
-            string editQuerry = "UPDATE `guestdb` SET  `TC` = @TC,;";
-            MySqlCommand command = new MySqlCommand(editQuerry, con.GetConnection());
-            command.Parameters.Add("@ROOM", MySqlDbType.VarChar).Value = room;
-            con.opencon();
-            if (command.ExecuteNonQuery() == 1)
-            {
-                con.closecon();
-                return true;
-            }
-            else
-            {
-                con.closecon();
-                return false;
-            }
-        }
         public bool editroom(string status, string roomnum)
         {
             string editQuerry = "UPDATE `roomdb` SET  `STATUSROOM` = @stu WHERE `ROOMTYPE` = @id;";

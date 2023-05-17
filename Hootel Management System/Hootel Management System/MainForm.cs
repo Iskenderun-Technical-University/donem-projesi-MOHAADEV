@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+
 namespace Hootel_Management_System
 {
     public partial class MainForm : Form
@@ -30,30 +31,9 @@ namespace Hootel_Management_System
             f.Show();
 
         }
-        private void button_dashboard_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button_guest_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            panel_slide.Height = rez.Height;
-            panel_slide.Top = rez.Top;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void panel_slide_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void button_dashboard_Click_1(object sender, EventArgs e)
@@ -70,26 +50,9 @@ namespace Hootel_Management_System
             Loadform(new GuestForm());
         }
 
-        private void Button3_Click_1(object sender, EventArgs e)
-        {
-            panel_slide.Height = rez.Height;
-            panel_slide.Top = rez.Top;
-            
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             Loadform(new GuestForm());
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void button3_Click_2(object sender, EventArgs e)
@@ -104,6 +67,11 @@ namespace Hootel_Management_System
             panel_slide.Height = rez.Height;
             panel_slide.Top = rez.Top;
             Loadform(new DASHBOARD());
+        }
+
+        private void mainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

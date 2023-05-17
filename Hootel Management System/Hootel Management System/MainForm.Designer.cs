@@ -33,15 +33,15 @@ namespace Hootel_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.rez = new Guna.UI2.WinForms.Guna2Button();
+            this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
+            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_guest = new Guna.UI2.WinForms.Guna2Button();
-            this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,33 +54,38 @@ namespace Hootel_Management_System
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
             this.guna2Panel1.Controls.Add(this.panel_slide);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.rez);
             this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.button_guest);
             this.guna2Panel1.Controls.Add(this.button_dashboard);
+            this.guna2Panel1.Controls.Add(this.rez);
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(216, 656);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // panel_slide
+            // guna2Button1
             // 
-            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(97)))), ((int)(((byte)(177)))));
-            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.panel_slide.ForeColor = System.Drawing.Color.White;
-            this.panel_slide.Location = new System.Drawing.Point(203, 161);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 58);
-            this.panel_slide.TabIndex = 7;
+            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(208)))));
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 394);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(216, 46);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = " PANEL";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // rez
             // 
@@ -95,13 +100,50 @@ namespace Hootel_Management_System
             this.rez.Image = ((System.Drawing.Image)(resources.GetObject("rez.Image")));
             this.rez.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rez.ImageSize = new System.Drawing.Size(50, 50);
-            this.rez.Location = new System.Drawing.Point(0, 368);
+            this.rez.Location = new System.Drawing.Point(0, 313);
             this.rez.Name = "rez";
-            this.rez.Size = new System.Drawing.Size(216, 58);
+            this.rez.Size = new System.Drawing.Size(216, 46);
             this.rez.TabIndex = 3;
             this.rez.Text = "Rezervasyon";
             this.rez.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rez.Click += new System.EventHandler(this.button3_Click_2);
+            // 
+            // button_dashboard
+            // 
+            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
+            this.button_dashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button_dashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button_dashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button_dashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button_dashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
+            this.button_dashboard.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_dashboard.ForeColor = System.Drawing.Color.Black;
+            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
+            this.button_dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.button_dashboard.ImageSize = new System.Drawing.Size(50, 50);
+            this.button_dashboard.Location = new System.Drawing.Point(3, 236);
+            this.button_dashboard.Name = "button_dashboard";
+            this.button_dashboard.Size = new System.Drawing.Size(213, 46);
+            this.button_dashboard.TabIndex = 3;
+            this.button_dashboard.Text = "ODALAR";
+            this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
+            // 
+            // panel_slide
+            // 
+            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(97)))), ((int)(((byte)(177)))));
+            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.panel_slide.ForeColor = System.Drawing.Color.White;
+            this.panel_slide.Location = new System.Drawing.Point(200, 394);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(16, 46);
+            this.panel_slide.TabIndex = 7;
             // 
             // button1
             // 
@@ -148,32 +190,11 @@ namespace Hootel_Management_System
             this.button_guest.ImageSize = new System.Drawing.Size(50, 50);
             this.button_guest.Location = new System.Drawing.Point(3, 161);
             this.button_guest.Name = "button_guest";
-            this.button_guest.Size = new System.Drawing.Size(210, 57);
+            this.button_guest.Size = new System.Drawing.Size(210, 46);
             this.button_guest.TabIndex = 3;
-            this.button_guest.Text = "Guest";
+            this.button_guest.Text = "MİSAFİR";
             this.button_guest.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_guest.Click += new System.EventHandler(this.button_guest_Click_1);
-            // 
-            // button_dashboard
-            // 
-            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(168)))));
-            this.button_dashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.button_dashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.button_dashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button_dashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.button_dashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
-            this.button_dashboard.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_dashboard.ForeColor = System.Drawing.Color.Black;
-            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
-            this.button_dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.button_dashboard.ImageSize = new System.Drawing.Size(50, 50);
-            this.button_dashboard.Location = new System.Drawing.Point(0, 261);
-            this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(213, 58);
-            this.button_dashboard.TabIndex = 3;
-            this.button_dashboard.Text = "ROOMS";
-            this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
             // 
             // mainpanel
             // 
@@ -182,7 +203,7 @@ namespace Hootel_Management_System
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(790, 644);
             this.mainpanel.TabIndex = 4;
-            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanel_Paint);
             // 
             // guna2GradientButton9
             // 
@@ -199,27 +220,6 @@ namespace Hootel_Management_System
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.Size = new System.Drawing.Size(790, 16);
             this.guna2GradientButton9.TabIndex = 6;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(208)))));
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 477);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(216, 58);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "DashBoard";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // MainForm
             // 
