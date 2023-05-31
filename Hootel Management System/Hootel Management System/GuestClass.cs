@@ -46,6 +46,7 @@ namespace Hootel_Management_System
             MySqlCommand command = new MySqlCommand(SelectQuery, con.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
+
             adapter.SelectCommand = command;
             adapter.Fill(table);
 

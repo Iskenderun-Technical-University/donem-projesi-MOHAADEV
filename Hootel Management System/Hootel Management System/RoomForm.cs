@@ -31,21 +31,16 @@ namespace Hootel_Management_System
             }
             else
             {
-
                 try
                 {
-
-
                     if (insertRoom)
                     {
                         MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gettable();
-                   //     temiz();
                     }
                     else
                     {
                         MessageBox.Show("bilgiler kaydedilmedi", "bilgi Kaydedilmedi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                     }
                 }
                 catch (Exception ex)
@@ -93,12 +88,6 @@ namespace Hootel_Management_System
                 }
             }
         }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DtextBox_type.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try

@@ -22,6 +22,16 @@ namespace Hootel_Management_System
             adapter.Fill(table);
             return table;
         }
+        public DataTable roomByType2()
+        {
+            string SelectQuery = "SELECT `ROOMTYPE` FROM `dbhotel`.`roomdb` WHERE STATUSROOM = 'free';";
+            MySqlCommand command = new MySqlCommand(SelectQuery, con.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            return table;
+        }
 
         public DataTable CoustmerByRoom(string room)
         { 
@@ -58,15 +68,17 @@ namespace Hootel_Management_System
             MySqlCommand command = new MySqlCommand(SelectQuery, con.GetConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
+
             adapter.SelectCommand = command;
             adapter.Fill(table);
+
             return table;
 
         }
 
         public bool insertRez(string tc, string romm, DateTime Datein, DateTime dateout)
         {
-            string insertQuerry = "INSERT INTO REZDB (TC , ROOOM , DateIn ,DateOut) values(@TC ,@room ,@dain ,@daout );";
+            string insertQuerry = "INSERT INTO REZDB (TC , ROOOM , DateIn ,DateOut) values(@TC ,@room ,@dain ,@daout);";
             MySqlCommand command = new MySqlCommand(insertQuerry, con.GetConnection());
           
             command.Parameters.Add("@TC", MySqlDbType.VarChar).Value = tc;

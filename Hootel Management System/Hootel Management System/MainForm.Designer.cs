@@ -54,12 +54,12 @@ namespace Hootel_Management_System
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(49)))), ((int)(((byte)(124)))));
             this.guna2Panel1.Controls.Add(this.panel_slide);
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.rez);
+            this.guna2Panel1.Controls.Add(this.button_dashboard);
             this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.button_guest);
-            this.guna2Panel1.Controls.Add(this.button_dashboard);
-            this.guna2Panel1.Controls.Add(this.rez);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -81,7 +81,7 @@ namespace Hootel_Management_System
             this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
             this.guna2Button1.Location = new System.Drawing.Point(0, 394);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(216, 46);
+            this.guna2Button1.Size = new System.Drawing.Size(210, 46);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = " PANEL";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -95,14 +95,14 @@ namespace Hootel_Management_System
             this.rez.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.rez.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.rez.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(237)))), ((int)(((byte)(210)))));
-            this.rez.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rez.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rez.ForeColor = System.Drawing.Color.Black;
             this.rez.Image = ((System.Drawing.Image)(resources.GetObject("rez.Image")));
             this.rez.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rez.ImageSize = new System.Drawing.Size(50, 50);
             this.rez.Location = new System.Drawing.Point(0, 313);
             this.rez.Name = "rez";
-            this.rez.Size = new System.Drawing.Size(216, 46);
+            this.rez.Size = new System.Drawing.Size(210, 46);
             this.rez.TabIndex = 3;
             this.rez.Text = "Rezervasyon";
             this.rez.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -121,9 +121,9 @@ namespace Hootel_Management_System
             this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
             this.button_dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.button_dashboard.ImageSize = new System.Drawing.Size(50, 50);
-            this.button_dashboard.Location = new System.Drawing.Point(3, 236);
+            this.button_dashboard.Location = new System.Drawing.Point(0, 236);
             this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(213, 46);
+            this.button_dashboard.Size = new System.Drawing.Size(210, 46);
             this.button_dashboard.TabIndex = 3;
             this.button_dashboard.Text = "ODALAR";
             this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -140,9 +140,9 @@ namespace Hootel_Management_System
             this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.panel_slide.ForeColor = System.Drawing.Color.White;
-            this.panel_slide.Location = new System.Drawing.Point(200, 394);
+            this.panel_slide.Location = new System.Drawing.Point(203, 161);
             this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(16, 46);
+            this.panel_slide.Size = new System.Drawing.Size(13, 46);
             this.panel_slide.TabIndex = 7;
             // 
             // button1
@@ -155,9 +155,9 @@ namespace Hootel_Management_System
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 574);
+            this.button1.Location = new System.Drawing.Point(0, 595);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 82);
+            this.button1.Size = new System.Drawing.Size(216, 61);
             this.button1.TabIndex = 5;
             this.button1.Text = "Logout";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -188,7 +188,7 @@ namespace Hootel_Management_System
             this.button_guest.Image = ((System.Drawing.Image)(resources.GetObject("button_guest.Image")));
             this.button_guest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.button_guest.ImageSize = new System.Drawing.Size(50, 50);
-            this.button_guest.Location = new System.Drawing.Point(3, 161);
+            this.button_guest.Location = new System.Drawing.Point(0, 161);
             this.button_guest.Name = "button_guest";
             this.button_guest.Size = new System.Drawing.Size(210, 46);
             this.button_guest.TabIndex = 3;
@@ -227,9 +227,9 @@ namespace Hootel_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1003, 656);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2GradientButton9);
             this.Controls.Add(this.mainpanel);
-            this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";

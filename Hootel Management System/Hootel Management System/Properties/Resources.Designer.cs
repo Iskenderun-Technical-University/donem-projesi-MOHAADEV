@@ -63,6 +63,16 @@ namespace Hootel_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_refresh_shield_48px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_refresh_shield_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap navy_blue_smoky_art_abstract_background {
             get {
                 object obj = ResourceManager.GetObject("navy-blue-smoky-art-abstract-background", resourceCulture);

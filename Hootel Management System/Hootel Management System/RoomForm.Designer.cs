@@ -30,18 +30,15 @@ namespace Hootel_Management_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.SILMEBUT = new System.Windows.Forms.Button();
-            this.button_dashboard = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.DtextBox_type = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +46,9 @@ namespace Hootel_Management_System
             this.free = new Guna.UI2.WinForms.Guna2CheckBox();
             this.busy = new Guna.UI2.WinForms.Guna2CheckBox();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SILMEBUT = new System.Windows.Forms.Button();
+            this.button_dashboard = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,47 +58,12 @@ namespace Hootel_Management_System
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // SILMEBUT
-            // 
-            this.SILMEBUT.BackColor = System.Drawing.Color.Transparent;
-            this.SILMEBUT.FlatAppearance.BorderSize = 0;
-            this.SILMEBUT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
-            this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
-            this.SILMEBUT.Location = new System.Drawing.Point(311, 11);
-            this.SILMEBUT.Name = "SILMEBUT";
-            this.SILMEBUT.Size = new System.Drawing.Size(142, 96);
-            this.SILMEBUT.TabIndex = 3;
-            this.SILMEBUT.Text = "Silme";
-            this.SILMEBUT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.SILMEBUT.UseVisualStyleBackColor = false;
-            this.SILMEBUT.Click += new System.EventHandler(this.SILMEBUT_Click);
-            // 
-            // button_dashboard
-            // 
-            this.button_dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.button_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_dashboard.FlatAppearance.BorderSize = 0;
-            this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
-            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
-            this.button_dashboard.Location = new System.Drawing.Point(169, 11);
-            this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(142, 96);
-            this.button_dashboard.TabIndex = 2;
-            this.button_dashboard.Text = "Kaydet";
-            this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_dashboard.UseVisualStyleBackColor = false;
-            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(-4, 501);
+            this.label2.Location = new System.Drawing.Point(12, 522);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 24);
             this.label2.TabIndex = 16;
@@ -109,7 +74,7 @@ namespace Hootel_Management_System
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(467, 499);
+            this.label3.Location = new System.Drawing.Point(473, 522);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 24);
             this.label3.TabIndex = 18;
@@ -117,39 +82,22 @@ namespace Hootel_Management_System
             // 
             // DtextBox_type
             // 
-            this.DtextBox_type.Location = new System.Drawing.Point(132, 503);
+            this.DtextBox_type.Location = new System.Drawing.Point(148, 524);
             this.DtextBox_type.Name = "DtextBox_type";
             this.DtextBox_type.Size = new System.Drawing.Size(143, 24);
             this.DtextBox_type.TabIndex = 15;
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.SILMEBUT);
             this.panel2.Controls.Add(this.button_dashboard);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 553);
+            this.panel2.Location = new System.Drawing.Point(0, 587);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(801, 107);
+            this.panel2.Size = new System.Drawing.Size(801, 73);
             this.panel2.TabIndex = 14;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(455, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 96);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "güncell";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -190,7 +138,7 @@ namespace Hootel_Management_System
             this.free.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.free.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.free.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.free.Location = new System.Drawing.Point(566, 489);
+            this.free.Location = new System.Drawing.Point(572, 512);
             this.free.Name = "free";
             this.free.Size = new System.Drawing.Size(74, 25);
             this.free.TabIndex = 26;
@@ -209,7 +157,7 @@ namespace Hootel_Management_System
             this.busy.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.busy.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busy.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.busy.Location = new System.Drawing.Point(566, 516);
+            this.busy.Location = new System.Drawing.Point(572, 539);
             this.busy.Name = "busy";
             this.busy.Size = new System.Drawing.Size(79, 25);
             this.busy.TabIndex = 26;
@@ -245,14 +193,14 @@ namespace Hootel_Management_System
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView1.Location = new System.Drawing.Point(0, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 9);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(801, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(801, 473);
             this.dataGridView1.TabIndex = 27;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -275,6 +223,61 @@ namespace Hootel_Management_System
             this.dataGridView1.ThemeStyle.RowsStyle.Height = 26;
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(456, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 60);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "güncell";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // SILMEBUT
+            // 
+            this.SILMEBUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
+            this.SILMEBUT.FlatAppearance.BorderSize = 0;
+            this.SILMEBUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
+            this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
+            this.SILMEBUT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SILMEBUT.Location = new System.Drawing.Point(312, 8);
+            this.SILMEBUT.Name = "SILMEBUT";
+            this.SILMEBUT.Size = new System.Drawing.Size(142, 60);
+            this.SILMEBUT.TabIndex = 3;
+            this.SILMEBUT.Text = "Silme";
+            this.SILMEBUT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SILMEBUT.UseVisualStyleBackColor = false;
+            this.SILMEBUT.Click += new System.EventHandler(this.SILMEBUT_Click);
+            // 
+            // button_dashboard
+            // 
+            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
+            this.button_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_dashboard.FlatAppearance.BorderSize = 0;
+            this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
+            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
+            this.button_dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_dashboard.Location = new System.Drawing.Point(170, 8);
+            this.button_dashboard.Name = "button_dashboard";
+            this.button_dashboard.Size = new System.Drawing.Size(142, 60);
+            this.button_dashboard.TabIndex = 2;
+            this.button_dashboard.Text = "Kaydet";
+            this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_dashboard.UseVisualStyleBackColor = false;
+            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
             // 
             // RoomForm
             // 

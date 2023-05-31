@@ -64,8 +64,8 @@ namespace Hootel_Management_System
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            panel_slide.Height = rez.Height;
-            panel_slide.Top = rez.Top;
+            panel_slide.Height = guna2Button1.Height;
+            panel_slide.Top = guna2Button1.Top;
             Loadform(new DASHBOARD());
         }
 

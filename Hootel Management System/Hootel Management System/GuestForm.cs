@@ -77,7 +77,7 @@ namespace Hootel_Management_System
         {
             gettable();
             
-            DcomboBox1.DataSource = rez.roomByType();
+            DcomboBox1.DataSource = rez.roomByType2();
             DcomboBox1.DisplayMember = "ROOMTYPE";
         }
         private void  gettable()

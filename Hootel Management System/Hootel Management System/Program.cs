@@ -16,7 +16,7 @@ namespace Hootel_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new rezervasyonForm());
+            Application.Run(new Form1());
         }
     }
 }
