@@ -33,10 +33,10 @@ namespace Hootel_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.rez = new Guna.UI2.WinForms.Guna2Button();
             this.button_dashboard = new Guna.UI2.WinForms.Guna2Button();
-            this.panel_slide = new Guna.UI2.WinForms.Guna2GradientButton();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_guest = new Guna.UI2.WinForms.Guna2Button();
@@ -66,6 +66,22 @@ namespace Hootel_Management_System
             this.guna2Panel1.Size = new System.Drawing.Size(216, 656);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // panel_slide
+            // 
+            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(97)))), ((int)(((byte)(177)))));
+            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.panel_slide.ForeColor = System.Drawing.Color.White;
+            this.panel_slide.Location = new System.Drawing.Point(203, 161);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(13, 46);
+            this.panel_slide.TabIndex = 7;
+            // 
             // guna2Button1
             // 
             this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(208)))));
@@ -83,7 +99,7 @@ namespace Hootel_Management_System
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(210, 46);
             this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = " PANEL";
+            this.guna2Button1.Text = "İSTATİKLER";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -128,22 +144,6 @@ namespace Hootel_Management_System
             this.button_dashboard.Text = "ODALAR";
             this.button_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click_1);
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.panel_slide.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.panel_slide.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.panel_slide.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(97)))), ((int)(((byte)(177)))));
-            this.panel_slide.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel_slide.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.panel_slide.ForeColor = System.Drawing.Color.White;
-            this.panel_slide.Location = new System.Drawing.Point(203, 161);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(13, 46);
-            this.panel_slide.TabIndex = 7;
             // 
             // button1
             // 

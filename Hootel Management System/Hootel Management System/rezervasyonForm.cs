@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using CrystalDecisions.CrystalReports.Engine;
+
 
 namespace Hootel_Management_System
 {
@@ -44,8 +44,8 @@ namespace Hootel_Management_System
                 DateTime ddateout = dateoutguna2DateTimePicker2.Value;
                 if (rez.insertRez(tc, room, ddatein, ddateout) && rez.revUpdate(room, "busy"))
                     {
-                       // MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        gettable();
+                        MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                      /*  gettable();
                         CrystalReport3 crs = new CrystalReport3();
                         TextObject rooom = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["Text42"];
                         TextObject tcc = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["tctext"];
@@ -64,10 +64,8 @@ namespace Hootel_Management_System
                         tele.Text = dt.Rows[0][3].ToString();
                         ode.Text = dt.Rows[0][4].ToString();
                         rooom.Text = dt.Rows[0][6].ToString();
-                        Bill bi = new Bill();
-                        bi.crystalReportViewer1.ReportSource = crs;
-                        this.Hide();
-                        bi.Show();
+                      */
+                      
                     }
                     else
                     {
