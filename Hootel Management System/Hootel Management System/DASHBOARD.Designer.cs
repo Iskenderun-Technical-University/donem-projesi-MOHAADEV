@@ -134,9 +134,9 @@ namespace Hootel_Management_System
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 26);
+            this.label3.Size = new System.Drawing.Size(117, 26);
             this.label3.TabIndex = 0;
-            this.label3.Text = "MİKTAR";
+            this.label3.Text = "TOPLAM";
             // 
             // panel3
             // 
@@ -174,9 +174,9 @@ namespace Hootel_Management_System
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(14, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 26);
+            this.label4.Size = new System.Drawing.Size(116, 26);
             this.label4.TabIndex = 0;
-            this.label4.Text = "DAYLI";
+            this.label4.Text = "GÜNLÜK";
             // 
             // dateinguna2DateTimePicker1
             // 
@@ -211,9 +211,9 @@ namespace Hootel_Management_System
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(23, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 26);
+            this.label5.Size = new System.Drawing.Size(175, 26);
             this.label5.TabIndex = 0;
-            this.label5.Text = "DAYLI";
+            this.label5.Text = "GÜNLÜK ODA";
             // 
             // guna2ComboBox1
             // 

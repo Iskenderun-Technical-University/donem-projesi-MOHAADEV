@@ -20,14 +20,10 @@ namespace Hootel_Management_System
         }
 
         private void label5_MouseHover(object sender, EventArgs e)
-        {
-            label5.Font = new Font(label5.Font.Name, label5.Font.SizeInPoints, FontStyle.Underline);
-        }
+        {        }
 
         private void label5_MouseLeave(object sender, EventArgs e)
-        {
-            label5.Font = new Font(label5.Font.Name, label5.Font.SizeInPoints, FontStyle.Regular);
-        }
+        {        }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {

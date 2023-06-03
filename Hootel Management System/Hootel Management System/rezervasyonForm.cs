@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace Hootel_Management_System
 {
@@ -45,27 +45,7 @@ namespace Hootel_Management_System
                 if (rez.insertRez(tc, room, ddatein, ddateout) && rez.revUpdate(room, "busy"))
                     {
                         MessageBox.Show("Veri başarıyla kaydedildi", "bilgi kaydetme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                      /*  gettable();
-                        CrystalReport3 crs = new CrystalReport3();
-                        TextObject rooom = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["Text42"];
-                        TextObject tcc = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["tctext"];
-                        TextObject tele = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["teletext"];
-                        TextObject name = (TextObject)crs.ReportDefinition.Sections["Section1"].ReportObjects["NAME"];
-                        TextObject ode = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["Odetext"];
-                        TextObject namee = (TextObject)crs.ReportDefinition.Sections["Section2"].ReportObjects["namee"];
-                        DataTable dt = new DataTable();
-                        string query = "SELECT *FROM GUESTDB WHERE TC = '" + tccomboBox1.Text + "'";
-                        MySqlCommand cmd = new MySqlCommand(query, con.GetConnection());
-                        MySqlDataAdapter adb = new MySqlDataAdapter(cmd);
-                        adb.Fill(dt);
-                        tcc.Text = dt.Rows[0][1].ToString();
-                        name.Text = dt.Rows[0][2].ToString();
-                        namee.Text = dt.Rows[0][2].ToString();
-                        tele.Text = dt.Rows[0][3].ToString();
-                        ode.Text = dt.Rows[0][4].ToString();
-                        rooom.Text = dt.Rows[0][6].ToString();
-                      */
-                      
+                       
                     }
                     else
                     {

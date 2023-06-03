@@ -99,7 +99,7 @@ namespace Hootel_Management_System
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(210, 46);
             this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "İSTATİKLER";
+            this.guna2Button1.Text = "İSTATİSTİK";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -159,7 +159,7 @@ namespace Hootel_Management_System
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 61);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Logout";
+            this.button1.Text = "ÇIKIŞ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

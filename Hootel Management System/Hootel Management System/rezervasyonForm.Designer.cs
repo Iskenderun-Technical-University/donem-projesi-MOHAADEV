@@ -39,14 +39,14 @@ namespace Hootel_Management_System
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SILMEBUT = new System.Windows.Forms.Button();
+            this.button_dashboard = new System.Windows.Forms.Button();
             this.dateinguna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dateoutguna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.roomcombobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tccomboBox1 = new System.Windows.Forms.ComboBox();
-            this.SILMEBUT = new System.Windows.Forms.Button();
-            this.button_dashboard = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -165,6 +165,43 @@ namespace Hootel_Management_System
             this.panel2.Size = new System.Drawing.Size(801, 73);
             this.panel2.TabIndex = 14;
             // 
+            // SILMEBUT
+            // 
+            this.SILMEBUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
+            this.SILMEBUT.FlatAppearance.BorderSize = 0;
+            this.SILMEBUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
+            this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
+            this.SILMEBUT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SILMEBUT.Location = new System.Drawing.Point(413, 5);
+            this.SILMEBUT.Name = "SILMEBUT";
+            this.SILMEBUT.Size = new System.Drawing.Size(142, 67);
+            this.SILMEBUT.TabIndex = 3;
+            this.SILMEBUT.Text = "Çıkış";
+            this.SILMEBUT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SILMEBUT.UseVisualStyleBackColor = false;
+            this.SILMEBUT.Click += new System.EventHandler(this.SILMEBUT_Click);
+            // 
+            // button_dashboard
+            // 
+            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
+            this.button_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_dashboard.FlatAppearance.BorderSize = 0;
+            this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
+            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
+            this.button_dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_dashboard.Location = new System.Drawing.Point(271, 5);
+            this.button_dashboard.Name = "button_dashboard";
+            this.button_dashboard.Size = new System.Drawing.Size(142, 67);
+            this.button_dashboard.TabIndex = 2;
+            this.button_dashboard.Text = "Kaydet";
+            this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button_dashboard.UseVisualStyleBackColor = false;
+            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
+            // 
             // dateinguna2DateTimePicker1
             // 
             this.dateinguna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
@@ -206,9 +243,9 @@ namespace Hootel_Management_System
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(563, 501);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 23);
+            this.label3.Size = new System.Drawing.Size(68, 23);
             this.label3.TabIndex = 28;
-            this.label3.Text = "JOIN";
+            this.label3.Text = "GIRIŞ";
             // 
             // label4
             // 
@@ -217,9 +254,9 @@ namespace Hootel_Management_System
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(571, 549);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 23);
+            this.label4.Size = new System.Drawing.Size(66, 23);
             this.label4.TabIndex = 28;
-            this.label4.Text = "OUT";
+            this.label4.Text = "ÇIKIŞ";
             // 
             // roomcombobox
             // 
@@ -247,43 +284,6 @@ namespace Hootel_Management_System
             this.tccomboBox1.Size = new System.Drawing.Size(199, 25);
             this.tccomboBox1.TabIndex = 32;
             // 
-            // SILMEBUT
-            // 
-            this.SILMEBUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
-            this.SILMEBUT.FlatAppearance.BorderSize = 0;
-            this.SILMEBUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SILMEBUT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SILMEBUT.ForeColor = System.Drawing.Color.Transparent;
-            this.SILMEBUT.Image = ((System.Drawing.Image)(resources.GetObject("SILMEBUT.Image")));
-            this.SILMEBUT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SILMEBUT.Location = new System.Drawing.Point(413, 5);
-            this.SILMEBUT.Name = "SILMEBUT";
-            this.SILMEBUT.Size = new System.Drawing.Size(142, 67);
-            this.SILMEBUT.TabIndex = 3;
-            this.SILMEBUT.Text = "Çıkış";
-            this.SILMEBUT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SILMEBUT.UseVisualStyleBackColor = false;
-            this.SILMEBUT.Click += new System.EventHandler(this.SILMEBUT_Click);
-            // 
-            // button_dashboard
-            // 
-            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(197)))));
-            this.button_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_dashboard.FlatAppearance.BorderSize = 0;
-            this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_dashboard.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_dashboard.ForeColor = System.Drawing.Color.Transparent;
-            this.button_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("button_dashboard.Image")));
-            this.button_dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_dashboard.Location = new System.Drawing.Point(271, 5);
-            this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(142, 67);
-            this.button_dashboard.TabIndex = 2;
-            this.button_dashboard.Text = "Kaydet";
-            this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_dashboard.UseVisualStyleBackColor = false;
-            this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -291,9 +291,9 @@ namespace Hootel_Management_System
             this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(57, 532);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 24);
+            this.label5.Size = new System.Drawing.Size(57, 24);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Room :";
+            this.label5.Text = "Oda:";
             // 
             // rezervasyonForm
             // 
